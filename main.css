@@ -252,6 +252,13 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 16px;
 }
 
+@media (min-width: 1024px) {
+  .data-table .head,
+  .data-table .row {
+    gap: 30px;
+  }
+}
+
 @media (min-width: 831px) {
   .section-title {
     display: none;
