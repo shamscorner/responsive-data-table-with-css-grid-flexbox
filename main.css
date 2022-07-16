@@ -125,3 +125,23 @@ p, h1, h2, h3, h4, h5, h6 {
 .data-table .company-info .info {
   margin-left: 14px;
 }
+
+/* status */
+.data-table .status {
+  width: 100px;
+  font-weight: 600;
+  font-size: var(--text-xs);
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.data-table .status.status--green {
+  color: rgb(21 128 61);
+  background-color: rgb(220 252 231);
+}
+
+.data-table .status.status--red {
+  color: rgb(185 28 28);
+  background-color: rgb(254 226 226);
+}
