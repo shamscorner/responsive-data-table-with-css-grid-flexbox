@@ -188,3 +188,11 @@ p, h1, h2, h3, h4, h5, h6 {
 .data-table .progressbar .progressbar-inner {
   background-color: var(--indigo-400);
 }
+
+/* actions */
+.data-table .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
