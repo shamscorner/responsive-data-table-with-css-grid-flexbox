@@ -277,3 +277,18 @@ p, h1, h2, h3, h4, h5, h6 {
     align-self: center;
   }
 }
+
+@media (max-width: 525px) {
+  .data-table .row {
+    grid-template-areas:
+      'company users'
+      'about status'
+      'license actions';
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .data-table .actions {
+    justify-content: flex-start;
+  }
+}
