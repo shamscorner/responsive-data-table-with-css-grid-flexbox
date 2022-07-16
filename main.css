@@ -145,3 +145,30 @@ p, h1, h2, h3, h4, h5, h6 {
   color: rgb(185 28 28);
   background-color: rgb(254 226 226);
 }
+
+/* users */
+.data-table .users {
+  display: flex;
+}
+
+.data-table .users .user-profile,
+.data-table .users::after {
+  border: 3px solid white;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: -12px;
+  width: 40px;
+  height: 40px;
+}
+
+.data-table .users::after {
+  content: attr(data-users);
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  color: var(--indigo-400);
+  background-color: var(--indigo-100);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
