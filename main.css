@@ -126,26 +126,32 @@ p, h1, h2, h3, h4, h5, h6 {
 .data-table .col-company {
   flex: 0 0 140px;
   max-width: 140px;
+  grid-area: company;
 }
 
 .data-table .col-status {
   flex: 1 0 100px;
+  grid-area: status;
 }
 
 .data-table .col-about {
   flex: 1 1 250px;
+  grid-area: about;
 }
 
 .data-table .col-users {
   flex: 0 0 160px;
+  grid-area: users;
 }
 
 .data-table .col-license {
   flex: 0 0 100px;
+  grid-area: license;
 }
 
 .data-table .col-actions {
   flex: 0 0 60px;
+  grid-area: actions;
 }
 
 /* company info */
@@ -236,4 +242,20 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: flex-end;
   gap: 16px;
+}
+
+@media (max-width: 830px) {
+  .data-table .row {
+    display: grid;
+    grid-template-areas:
+      'company about status'
+      'license users actions';
+    grid-template-columns: minmax(150px, 1fr) 1fr 100px;
+    align-items: start;
+    gap: 16px 30px;
+  }
+
+  .data-table .col-actions {
+    align-self: center;
+  }
 }
