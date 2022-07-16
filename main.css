@@ -172,3 +172,19 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: var(--text-sm);
   font-weight: 600;
 }
+
+/* license used progress */
+.data-table .progressbar,
+.data-table .progressbar .progressbar-inner {
+  height: 8px;
+  border-radius: 10px;
+}
+
+.data-table .progressbar {
+  width: 100px;
+  background-color: var(--indigo-100);
+}
+
+.data-table .progressbar .progressbar-inner {
+  background-color: var(--indigo-400);
+}
