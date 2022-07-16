@@ -1,0 +1,116 @@
+:root {
+	--zinc-300: rgb(212 212 216);
+	--zinc-400: rgb(161 161 170);;
+	--zinc-500: rgb(113 113 122);
+  --indigo-100: rgb(224 231 255);
+  --indigo-400: rgb(129 140 248);
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+	height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(31 41 55);
+  padding: 32px 16px;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Global */
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-muted {
+  color: var(--zinc-500);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  color: var(--zinc-500);
+  transition: color 0.3s;
+}
+
+.btn-icon:hover {
+  color: var(--indigo-400);
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* data table */
+.data-table {
+	max-width: 970px;
+	margin: 32px auto;
+	border: 2px solid var(--zinc-300);
+	border-radius: 10px;
+}
+
+.data-table .head,
+.data-table .row {
+  display: flex;
+  align-items: center;
+	padding: 10px 16px;
+  gap: 16px;
+}
+
+.data-table .head {
+  font-size: var(--text-sm);
+	font-weight: 600;
+	color: var(--zinc-500);
+	border-bottom: 2px solid var(--zinc-300);
+}
