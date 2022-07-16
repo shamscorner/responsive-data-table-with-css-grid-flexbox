@@ -115,6 +115,31 @@ p, h1, h2, h3, h4, h5, h6 {
 	border-bottom: 2px solid var(--zinc-300);
 }
 
+.data-table .col-company {
+  flex: 0 0 140px;
+  max-width: 140px;
+}
+
+.data-table .col-status {
+  flex: 1 0 100px;
+}
+
+.data-table .col-about {
+  flex: 1 1 250px;
+}
+
+.data-table .col-users {
+  flex: 0 0 160px;
+}
+
+.data-table .col-license {
+  flex: 0 0 100px;
+}
+
+.data-table .col-actions {
+  flex: 0 0 60px;
+}
+
 /* company info */
 .data-table .company-info {
 	display: flex;
