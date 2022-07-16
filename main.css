@@ -114,3 +114,14 @@ p, h1, h2, h3, h4, h5, h6 {
 	color: var(--zinc-500);
 	border-bottom: 2px solid var(--zinc-300);
 }
+
+/* company info */
+.data-table .company-info {
+	display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+.data-table .company-info .info {
+  margin-left: 14px;
+}
